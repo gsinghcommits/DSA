@@ -18,8 +18,9 @@ class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         inorder(root);
         return res;
-    }
 
+        
+    }
     public void inorder(TreeNode node) {
         if(node == null) {
             return;
@@ -27,5 +28,6 @@ class Solution {
         inorder(node.left);
         res.add(node.val);
         inorder(node.right);
+
     }
 }
