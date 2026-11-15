@@ -18,8 +18,8 @@ class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
         preorder(root);
         return res;
+        
     }
-
     public void preorder(TreeNode node) {
         if(node == null) {
             return;
